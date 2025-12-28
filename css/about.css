@@ -1,0 +1,217 @@
+.container {
+    width: 845px;
+    height: auto;
+    border: 2px solid rgb(255, 255, 255);
+    margin: auto    ;
+    background-color: rgb(255, 255, 255);
+}
+body {
+    background-color: rgb(0, 0, 0);
+    font-family:"Open Sans", sans-serif;
+    font-size: 16px;
+    line-height: 28px;
+    color: black;
+    background-image: url(../Assets/Background/moroccan-flower-dark.png);
+}
+
+/* HEADER */
+.header {
+    padding: 20px;
+    padding-bottom: 5px;
+}
+
+.header .judul {
+    text-align: center;
+    font-size: 30px;
+    font-family: "Montserrat", sans-serif;
+    letter-spacing: 1px;
+    color: black;
+    font-weight: 700;
+}
+
+.header ul {
+    text-align: center;
+    padding: 0;
+}
+
+.header ul li {
+    display: inline-block;
+    margin-right: 70px;
+}
+
+.header a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.75);
+    font-weight: 600;
+    font-family: "Montserrat", sans-serif;
+}
+
+.header a:hover,
+.header a.active {
+    color: royalblue;
+}
+
+/* HERO ABOUT */
+.hero-about {
+    height: 350px;
+    background-image: url("../Assets/Home/About/About.JPG"); /* Ganti sesuai foto kamu */
+    background-size: cover;
+    background-position: center;
+    border-radius: 5px;
+}
+
+/* CONTENT */
+.content {
+    padding: 20px;
+}
+
+.content h2 {
+    font-size: 28px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 25px;
+    font-family: "Montserrat", sans-serif;
+}
+
+.content p {
+    margin-bottom: 20px;
+    font-size: 14px;
+}
+
+.content .penulis {
+    font-size: 11px;
+    margin-top: -5px;
+}
+
+.content .penulis a {
+    color: royalblue;
+    text-decoration: none;
+}
+
+.content ul {
+    margin-left: 20px;
+}
+
+.content ul li {
+    margin-bottom: 7px;
+}
+
+/* FIGURE */
+figure {
+    text-align: center;
+    margin: 25px auto;
+}
+
+figure img {
+    width: 120px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.25);
+}
+
+figcaption {
+    font-size: 12px;
+    font-style: italic;
+    margin-top: 8px;
+    color: rgba(0,0,0,0.75);
+}
+
+/* FOOTER */
+.footer {
+    text-align: center;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    font-size: 12px;
+}
+.footer a {
+    color: white;
+    text-decoration: none;
+}
+/* Media */
+/* Tablet (max-width: 768px) */
+@media (max-width: 768px) {
+    .container {
+        width: 95%;
+    }
+
+    .header .judul {
+        font-size: 24px;
+    }
+
+    .header ul li {
+        margin-right: 30px;
+        font-size: 14px;
+    }
+
+    .hero-about {
+        height: 250px;
+    }
+
+    .content h2 {
+        font-size: 22px;
+    }
+
+    .content h3 {
+        font-size: 18px;
+    }
+
+    figure img {
+        width: 100px;
+    }
+}
+
+/* Handphone (max-width: 480px) */
+@media (max-width: 480px) {
+    .container {
+        width: 100%;
+        border: none;
+    }
+
+    .header {
+        padding: 10px;
+    }
+
+    .header .judul {
+        font-size: 20px;
+    }
+
+    .header ul li {
+        display: block; 
+        margin: 8px 0;
+    }
+
+    .hero-about {
+        height: 180px;
+    }
+
+    .content {
+        padding: 10px;
+    }
+
+    .content h2 {
+        font-size: 18px;
+    }
+
+    .content h3 {
+        font-size: 16px;
+    }
+
+    .content p {
+        font-size: 13px;
+        line-height: 22px;
+    }
+
+    figure img {
+        width: 80%;
+        max-width: 250px;
+    }
+
+    .footer {
+        font-size: 11px;
+        padding: 8px;
+    }
+}
